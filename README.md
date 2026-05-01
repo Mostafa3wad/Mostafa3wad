@@ -6,12 +6,7 @@
 ================================================================
 -->
 
-<div align="center">
-
-<!-- ▓▓▓ ANIMATED HEADER ▓▓▓ -->
-<a href="https://github.com/Mostafa3wad">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=MOSTAFA%20AWAD&fontSize=70&fontColor=00F5FF&animation=fadeIn&fontAlignY=38&desc=%3C%2F%20FLUTTER%20DEVELOPER%20%3E&descAlignY=58&descSize=18&descColor=FF00FF" width="100%" />
-</a>
+ 
 
 <!-- ▓▓▓ ANIMATED TYPING ▓▓▓ -->
 <a href="https://github.com/Mostafa3wad">
