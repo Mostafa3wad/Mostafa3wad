@@ -13,7 +13,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Mostafa%20Awad&fontSize=58&fontColor=00F5FF&animation=fadeIn&fontAlignY=38&desc=Flutter%20%C2%B7%20Mobile%20Developer&descAlignY=58&descSize=20&descColor=FF00FF" width="100%" />
 
 <!-- ▓▓▓ ANIMATED TYPING ▓▓▓ -->
-<a href="https://www.mostafaawad.com">
+<a href="https://mostafa3wad.vercel.app">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=600&color=00F5FF&center=true&vCenter=true&multiline=false&width=760&height=50&lines=%3E+Flutter+Developer+_;%3E+Clean+Architecture+Advocate+_;%3E+Cubit+%2F+Bloc+Specialist+_;%3E+9%2B+Apps+Shipped+to+Production+_" alt="Typing SVG" />
 </a>
 
@@ -23,7 +23,7 @@
 <a href="https://www.linkedin.com/in/awad-flutter-dev/">
   <img src="https://img.shields.io/badge/LINKEDIN-0A0E27?style=for-the-badge&logo=linkedin&logoColor=00F5FF&labelColor=0A0E27" />
 </a>
-<a href="https://www.mostafaawad.com">
+<a href="https://mostafa3wad.vercel.app">
   <img src="https://img.shields.io/badge/PORTFOLIO-0A0E27?style=for-the-badge&logo=googlechrome&logoColor=FF00FF&labelColor=0A0E27" />
 </a>
 <a href="https://wa.me/201100282677">
@@ -307,7 +307,7 @@ SignalR WebSockets · In-app payments · Push notifications · Workmanager
 
 <br/><br/>
 
-<a href="https://www.mostafaawad.com">
+<a href="https://mostafa3wad.vercel.app">
   <img src="https://img.shields.io/badge/▸_SEE_THE_FULL_PORTFOLIO-00F5FF?style=for-the-badge&labelColor=0A0E27&color=FF00FF" />
 </a>
 
