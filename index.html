@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mostafa Awad — Flutter Developer</title>
-  <meta name="description" content="Flutter Developer portfolio — cross-platform mobile experiences with clean architecture and pixel-perfect UI.">
+  <title>Mostafa Awad — Mobile Developer</title>
+  <meta name="description" content="Mobile Developer portfolio — cross-platform mobile experiences with clean architecture and pixel-perfect UI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -919,6 +919,12 @@
       align-items: center;
       justify-content: center;
       font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .skill-cat-icon svg {
+      width: 22px;
+      height: 22px;
     }
 
     .skill-category-label {
@@ -1328,6 +1334,13 @@
       margin-top: 10px;
     }
 
+    /* Reset absolute positioning when status-badge is inside modal */
+    .modal-hero-badges .status-badge {
+      position: static;
+      top: auto;
+      right: auto;
+    }
+
     .modal-badge {
       padding: 5px 14px;
       border-radius: var(--radius-pill);
@@ -1670,7 +1683,7 @@
         <div class="hero-content">
           <div class="hero-tag">
             <span class="label">I am</span>
-            <span class="value">Flutter Developer</span>
+            <span class="value">Mobile Developer</span>
           </div>
           <h1>Build <span class="gradient-text">Pixel-Perfect</span> Mobile Apps with <span class="gradient-text-2">Flutter!</span></h1>
           <p class="hero-bio">I build cross-platform mobile experiences with Flutter — clean architecture, pixel-perfect UI, and production-grade code.</p>
@@ -1762,7 +1775,7 @@
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a <strong>Flutter developer</strong> from Egypt, passionate about mobile engineering and building real products that people use every day. I focus on clean architecture, scalable code, and pixel-perfect interfaces across Android and iOS.</p>
+          <p>I'm a <strong>Mobile developer</strong> from Egypt, passionate about mobile engineering and building real products that people use every day. I focus on clean architecture, scalable code, and pixel-perfect interfaces across Android and iOS.</p>
           <p>Every project I build follows a structured, feature-first approach — from state management with Bloc/Cubit to networking with Dio and Firebase integration. I care about code quality, maintainability, and delivering polished user experiences.</p>
           <div class="about-highlight">
             <span class="dot"></span>
@@ -1772,12 +1785,12 @@
         <div class="stats-grid">
           <div class="stat-card">
             <div class="stat-icon">🚀</div>
-            <div class="stat-value">7+</div>
+            <div class="stat-value">9+</div>
             <div class="stat-label">Projects built</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">⏳</div>
-            <div class="stat-value">2+</div>
+            <div class="stat-value">3+</div>
             <div class="stat-label">Years experience</div>
           </div>
           <div class="stat-card">
@@ -1827,7 +1840,9 @@
       <div class="skills-grid">
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">💙</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="white"><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/></svg>
+            </div>
             <div class="skill-category-label">Flutter & Dart</div>
           </div>
           <div class="skill-pills">
@@ -1841,7 +1856,12 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">🔄</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="7" height="7" rx="1"/><rect x="15" y="2" width="7" height="7" rx="1"/><rect x="8.5" y="15" width="7" height="7" rx="1"/>
+                <path d="M5.5 9v2a4 4 0 004 4h5a4 4 0 004-4V9"/><line x1="12" y1="13" x2="12" y2="15"/>
+              </svg>
+            </div>
             <div class="skill-category-label">State Management</div>
           </div>
           <div class="skill-pills">
@@ -1853,7 +1873,11 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">🏛️</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 8 12 14 22 8 12 2"/><polyline points="2 13 12 19 22 13"/><polyline points="2 18 12 24 22 18"/>
+              </svg>
+            </div>
             <div class="skill-category-label">Architecture</div>
           </div>
           <div class="skill-pills">
@@ -1866,7 +1890,9 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">🔥</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="white"><path d="M3.89 15.672L6.255.461a.542.542 0 011.016-.171L9.878 5.45 3.89 15.672zm16.794 3.693L18.1 2.42a.549.549 0 00-.795-.422L3.89 15.672l7.229 4.555a1.595 1.595 0 001.604 0l7.96-4.862zm-9.9-7.502l2.48-4.646L21.51 19.365z"/></svg>
+            </div>
             <div class="skill-category-label">Backend & Firebase</div>
           </div>
           <div class="skill-pills">
@@ -1882,7 +1908,11 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">🌐</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+              </svg>
+            </div>
             <div class="skill-category-label">Networking</div>
           </div>
           <div class="skill-pills">
@@ -1897,7 +1927,11 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">📍</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
             <div class="skill-category-label">Maps & Location</div>
           </div>
           <div class="skill-pills">
@@ -1909,7 +1943,12 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-header">
-            <div class="skill-cat-icon">🛠️</div>
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                <path d="M6 9v6"/><path d="M13.5 6H16a2 2 0 012 2v7"/>
+              </svg>
+            </div>
             <div class="skill-category-label">Dev Tools</div>
           </div>
           <div class="skill-pills">
