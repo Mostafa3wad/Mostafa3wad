@@ -1386,10 +1386,6 @@
     }
 
     .modal-desc { white-space: pre-line; }
-    .project-language-switch { display: flex; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
-    .project-language-switch button { cursor: pointer; font: inherit; font-size: 0.85rem; padding: 8px 16px; color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-pill); }
-    .project-language-switch button[aria-pressed="true"] { border-color: #7b2ff7; background: rgba(123, 47, 247, 0.2); }
-    .project-language-switch button:focus-visible { outline: 2px solid #b794f4; outline-offset: 3px; }
     .project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
     .project-gallery figure { margin: 0; }
     .project-gallery figure:first-child { grid-column: 1 / -1; }
@@ -1400,7 +1396,6 @@
     .store-screenshots-wide a { flex-basis: min(360px, 80vw); }
     .store-screenshots img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border); }
     .store-screenshots a:focus-visible { outline: 2px solid #b794f4; outline-offset: 2px; }
-    #modalContent[dir="rtl"] { text-align: right; }
     @media (max-width: 600px) { .project-gallery { grid-template-columns: 1fr; } }
 
     .modal-features-grid {
@@ -2106,7 +2101,6 @@
         "storeGallery": [
           {
             "label": "Google Play · Android",
-            "labelAr": "Google Play · صور Android",
             "wide": false,
             "images": [
               "screenshots/clinic-organizer/google-play-1.png",
@@ -2118,7 +2112,6 @@
           },
           {
             "label": "App Store · iPhone",
-            "labelAr": "App Store · صور iPhone",
             "wide": false,
             "images": [
               "screenshots/clinic-organizer/app-store-iphone-1.jpg",
@@ -2130,7 +2123,6 @@
           },
           {
             "label": "App Store · iPad",
-            "labelAr": "App Store · صور iPad",
             "wide": true,
             "images": [
               "screenshots/clinic-organizer/app-store-ipad-1.jpg",
@@ -2145,28 +2137,7 @@
           "Product website",
           "Google Play listing and Android app previews",
           "App Store listing and iPad app previews"
-        ],
-        "translations": {
-          "ar": {
-            "longDesc": "طوّرنا Clinic Organizer كنظام لإدارة عيادات العلاج الطبيعي، يجمع المواعيد وملفات المرضى والجلسات والباقات والمدفوعات في تجربة واحدة بالعربي والإنجليزي. شمل المشروع تطبيقات Android وiOS ونسخة Windows، إلى جانب موقع تعريفي يعرض المنتج وروابط تنزيله.\n\nفي تنظيم المواعيد، يشمل النظام تحديد الأوقات المتاحة حسب ساعات عمل العيادة، ومنع حجز نفس الموعد مرتين، وتأكيد الحضور وتأجيل المواعيد مع الاحتفاظ بسجل التغييرات.\n\nجهزنا الملف الطبي لتسجيل الشكوى والتاريخ المرضي والتقييم والخطة العلاجية، مع خريطة جسم تفاعلية لتحديد موضع الإصابة. وربطنا المواعيد بسير الجلسة: مؤقت مباشر، وملاحظات علاجية، وتسجيل مستوى الألم، وتحديث حالة الموعد عند انتهاء الجلسة.\n\nيشمل الجانب المالي تسجيل مدفوعات الجلسات والباقات بطرق دفع مختلفة، ومتابعة المبالغ المتبقية، مع ملخصات وتقارير للإيرادات وأداء المعالجين. وبكده يمتد النظام من حجز الموعد وتوثيق العلاج إلى التحصيل ومراجعة أداء العيادة.\n\nراعينا اختلاف مسؤوليات الفريق بصلاحيات للمالك والمعالج والاستقبال: المالك يتابع العيادة والفريق والتقارير، والمعالج يتابع مرضاه وجلساته، والاستقبال يدير الحجوزات والمدفوعات دون تعديل الملف الطبي. الشغل شمل ربط الوظائف دي داخل نظام واحد، مع تجهيز الواجهات للغتين ولمنصات الموبايل والديسكتوب.",
-            "features": [
-              "تنظيم المواعيد ومنع الحجز المكرر",
-              "ملفات المرضى وخريطة جسم تفاعلية لتحديد الإصابة",
-              "مؤقت الجلسة والملاحظات العلاجية وتسجيل مستوى الألم",
-              "مدفوعات الجلسات والباقات ومتابعة المبالغ المتبقية",
-              "تقارير الإيرادات وأداء المعالجين",
-              "صلاحيات للمالك والمعالج والاستقبال",
-              "واجهات بالعربي والإنجليزي",
-              "تطبيقات Android وiOS وWindows وموقع تعريفي بالمنتج"
-            ],
-            "gallery": [
-              "موقع المنتج",
-              "صفحة Google Play ومعاينات تطبيق Android",
-              "صفحة App Store ومعاينات التطبيق على iPad"
-            ],
-            "caseStudy": "https://mosoft.online/ar/projects/clinic-organizer"
-          }
-        }
+        ]
       },
       {
         name: "The Readers Club",
@@ -2323,13 +2294,6 @@
     const githubSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>';
 
     const windowsSVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l9-1v8H2V4zm11-1.2L22 1v10h-9V2.8zM2 13h9v8l-9-1v-7zm11 0h9v10l-9-1.8V13z"/></svg>';
-    function projectLanguageButtons(idx, language = 'en') {
-      return `<div class="project-language-switch" role="group" aria-label="Project language / لغة المشروع">
-        <button type="button" lang="en" aria-pressed="${language === 'en'}" onclick="event.stopPropagation();openModal(${idx}, 'en')">English</button>
-        <button type="button" lang="ar" aria-pressed="${language === 'ar'}" onclick="event.stopPropagation();openModal(${idx}, 'ar')">العربية</button>
-      </div>`;
-    }
-
     function renderProjects(filter) {
       const grid = document.getElementById('projectsGrid');
       grid.innerHTML = '';
@@ -2366,7 +2330,6 @@
             ${p.role ? `<div class="project-role">${p.role} Project</div>` : ''}
             <h3>${p.name}</h3>
             <p class="project-desc">${p.desc}</p>
-            ${p.translations ? projectLanguageButtons(projects.indexOf(p)) : ''}
             <ul class="project-features">${features}</ul>
             <div class="project-tags">${tags}</div>
           </div>
@@ -2385,14 +2348,9 @@
     }
 
     /* ── MODAL ── */
-    function openModal(idx, language = 'en') {
-      const original = projects[idx];
-      const p = { ...original, ...(original.translations?.[language] || {}) };
-      const labels = language === 'ar'
-        ? { about: 'عن المشروع', screenshots: 'صور المشروع', features: 'المميزات الرئيسية', tech: 'التقنيات المستخدمة', links: 'روابط المشروع', website: 'موقع المنتج', windows: 'تحميل Windows', caseStudy: 'تفاصيل المشروع', completed: 'مكتمل' }
-        : { about: 'About', screenshots: 'Screenshots', features: 'Key Features', tech: 'Tech Stack', links: 'Links', website: 'Website', windows: 'Download for Windows', caseStudy: 'Project Case Study', completed: 'Completed' };
-      document.getElementById('modalContent').dir = language === 'ar' ? 'rtl' : 'ltr';
-      document.getElementById('modalContent').lang = language;
+    function openModal(idx) {
+      const p = projects[idx];
+      const labels = { about: 'About', screenshots: 'Screenshots', features: 'Key Features', tech: 'Tech Stack', links: 'Links', website: 'Website', windows: 'Download for Windows', caseStudy: 'Project Case Study', completed: 'Completed' };
       const statusClass = p.status === 'Completed' ? 'completed' : 'in-progress';
 
       // Screenshots — phone frames or flat images
@@ -2448,11 +2406,11 @@
 
       if (p.storeGallery) {
         screenshotsHtml += p.storeGallery.map(group => {
-          const title = language === 'ar' ? group.labelAr : group.label;
+          const title = group.label;
           return `<div class="modal-section">
             <div class="modal-section-title">${title}</div>
             <div class="store-screenshots${group.wide ? ' store-screenshots-wide' : ''}">${group.images.map((src, i) => `
-              <a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${title} — ${language === 'ar' ? 'صورة' : 'Screenshot'} ${i + 1}" loading="lazy"></a>
+              <a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${title} — Screenshot ${i + 1}" loading="lazy"></a>
             `).join('')}</div>
           </div>`;
         }).join('');
@@ -2532,7 +2490,6 @@
           }
           <div class="modal-hero-info">
             <h2>${p.name}</h2>
-            ${p.translations ? projectLanguageButtons(idx, language) : ''}
             <div class="modal-hero-badges">
               <span class="status-badge ${statusClass}">${p.status === 'Completed' ? labels.completed : p.status}</span>
               ${p.role ? `<span class="modal-badge role-badge">${p.role} Project</span>` : ''}
