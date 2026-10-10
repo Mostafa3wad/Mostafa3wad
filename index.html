@@ -1385,6 +1385,19 @@
       line-height: 1.8;
     }
 
+    .modal-desc { white-space: pre-line; }
+    .project-language-switch { display: flex; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
+    .project-language-switch button { cursor: pointer; font: inherit; font-size: 0.85rem; padding: 8px 16px; color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-pill); }
+    .project-language-switch button[aria-pressed="true"] { border-color: #7b2ff7; background: rgba(123, 47, 247, 0.2); }
+    .project-language-switch button:focus-visible { outline: 2px solid #b794f4; outline-offset: 3px; }
+    .project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .project-gallery figure { margin: 0; }
+    .project-gallery figure:first-child { grid-column: 1 / -1; }
+    .project-gallery img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border); }
+    .project-gallery figcaption { margin-top: 8px; font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; }
+    #modalContent[dir="rtl"] { text-align: right; }
+    @media (max-width: 600px) { .project-gallery { grid-template-columns: 1fr; } }
+
     .modal-features-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1785,7 +1798,7 @@
         <div class="stats-grid">
           <div class="stat-card">
             <div class="stat-icon">🚀</div>
-            <div class="stat-value">9+</div>
+            <div class="stat-value">10+</div>
             <div class="stat-label">Projects built</div>
           </div>
           <div class="stat-card">
@@ -2055,6 +2068,64 @@
   <script>
     const projects = [
       {
+        "name": "Clinic Organizer",
+        "desc": "A physiotherapy clinic management system connecting appointments, patient records, treatment sessions, packages and payments. Available in Arabic and English on Android, iOS and Windows.",
+        "longDesc": "We developed Clinic Organizer as a physiotherapy clinic management system, bringing appointments, patient records, sessions, packages and payments into one experience in Arabic and English. The project includes Android and iOS apps, a Windows desktop version, and a product website with platform download links.\n\nScheduling includes available time slots based on clinic working hours, prevention of duplicate bookings, attendance confirmation, and appointment postponements with a history of changes.\n\nWe built patient records around complaints, medical history, assessments and treatment plans, with an interactive body map for locating injuries. Appointments connect to the session workflow through a live timer, clinical notes, pain scores and an appointment status update when the session ends.\n\nThe financial workflow covers session and package payments through different payment methods, outstanding balances, and revenue and therapist performance summaries and reports. This connects appointment booking and treatment documentation to payment collection and clinic performance review.\n\nWe also accounted for different team responsibilities through owner, therapist and receptionist permissions. Owners oversee the clinic, team and reports; therapists work with their patients and sessions; receptionists manage bookings and payments without editing clinical records. The work brought these connected workflows into one system, with interfaces prepared for both languages and for mobile and desktop platforms.",
+        "features": [
+          "Scheduling with duplicate-booking prevention",
+          "Patient records and an interactive injury body map",
+          "Live session timer, clinical notes and pain scores",
+          "Session and package payments with balance tracking",
+          "Revenue and therapist performance reports",
+          "Owner, therapist and receptionist permissions",
+          "Arabic and English interfaces",
+          "Android, iOS and Windows apps with a product website"
+        ],
+        "tech": [],
+        "github": null,
+        "status": "Completed",
+        "role": null,
+        "platform": [
+          "Android",
+          "iOS",
+          "Windows"
+        ],
+        "icon": "🏥",
+        "color": "#2563EB",
+        "logo": "screenshots/clinic-organizer/clinic-organizer-logo.png",
+        "playStore": "https://play.google.com/store/apps/details?id=com.mosoft.clinicorganizer",
+        "appStore": "https://apps.apple.com/eg/app/clinic-organizer/id6809279509",
+        "website": "https://clinicorganizer.online",
+        "windows": "https://clinicorganizer.online/windows",
+        "caseStudy": "https://mosoft.online/en/projects/clinic-organizer",
+        "gallery": [
+          "Product website",
+          "Google Play listing and Android app previews",
+          "App Store listing and iPad app previews"
+        ],
+        "translations": {
+          "ar": {
+            "longDesc": "طوّرنا Clinic Organizer كنظام لإدارة عيادات العلاج الطبيعي، يجمع المواعيد وملفات المرضى والجلسات والباقات والمدفوعات في تجربة واحدة بالعربي والإنجليزي. شمل المشروع تطبيقات Android وiOS ونسخة Windows، إلى جانب موقع تعريفي يعرض المنتج وروابط تنزيله.\n\nفي تنظيم المواعيد، يشمل النظام تحديد الأوقات المتاحة حسب ساعات عمل العيادة، ومنع حجز نفس الموعد مرتين، وتأكيد الحضور وتأجيل المواعيد مع الاحتفاظ بسجل التغييرات.\n\nجهزنا الملف الطبي لتسجيل الشكوى والتاريخ المرضي والتقييم والخطة العلاجية، مع خريطة جسم تفاعلية لتحديد موضع الإصابة. وربطنا المواعيد بسير الجلسة: مؤقت مباشر، وملاحظات علاجية، وتسجيل مستوى الألم، وتحديث حالة الموعد عند انتهاء الجلسة.\n\nيشمل الجانب المالي تسجيل مدفوعات الجلسات والباقات بطرق دفع مختلفة، ومتابعة المبالغ المتبقية، مع ملخصات وتقارير للإيرادات وأداء المعالجين. وبكده يمتد النظام من حجز الموعد وتوثيق العلاج إلى التحصيل ومراجعة أداء العيادة.\n\nراعينا اختلاف مسؤوليات الفريق بصلاحيات للمالك والمعالج والاستقبال: المالك يتابع العيادة والفريق والتقارير، والمعالج يتابع مرضاه وجلساته، والاستقبال يدير الحجوزات والمدفوعات دون تعديل الملف الطبي. الشغل شمل ربط الوظائف دي داخل نظام واحد، مع تجهيز الواجهات للغتين ولمنصات الموبايل والديسكتوب.",
+            "features": [
+              "تنظيم المواعيد ومنع الحجز المكرر",
+              "ملفات المرضى وخريطة جسم تفاعلية لتحديد الإصابة",
+              "مؤقت الجلسة والملاحظات العلاجية وتسجيل مستوى الألم",
+              "مدفوعات الجلسات والباقات ومتابعة المبالغ المتبقية",
+              "تقارير الإيرادات وأداء المعالجين",
+              "صلاحيات للمالك والمعالج والاستقبال",
+              "واجهات بالعربي والإنجليزي",
+              "تطبيقات Android وiOS وWindows وموقع تعريفي بالمنتج"
+            ],
+            "gallery": [
+              "موقع المنتج",
+              "صفحة Google Play ومعاينات تطبيق Android",
+              "صفحة App Store ومعاينات التطبيق على iPad"
+            ],
+            "caseStudy": "https://mosoft.online/ar/projects/clinic-organizer"
+          }
+        }
+      },
+      {
         name: "The Readers Club",
         desc: "Helps avid readers log sessions, set goals, and build consistent reading habits through gamification and visual progress tracking.",
         longDesc: "The Readers Club is a comprehensive reading companion app designed for avid readers who want to build consistent reading habits. The app combines session tracking with gamification elements to keep users motivated. Users can log reading sessions with a built-in timer, set daily and weekly goals, and visualize their progress through a beautiful heatmap streak calendar. The achievement system rewards milestones, while Syncfusion-powered analytics charts provide deep insights into reading patterns over time. Background notifications via Workmanager remind users to maintain their streaks.",
@@ -2208,6 +2279,14 @@
     const appleSVG  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>';
     const githubSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>';
 
+    const windowsSVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l9-1v8H2V4zm11-1.2L22 1v10h-9V2.8zM2 13h9v8l-9-1v-7zm11 0h9v10l-9-1.8V13z"/></svg>';
+    function projectLanguageButtons(idx, language = 'en') {
+      return `<div class="project-language-switch" role="group" aria-label="Project language / لغة المشروع">
+        <button type="button" lang="en" aria-pressed="${language === 'en'}" onclick="event.stopPropagation();openModal(${idx}, 'en')">English</button>
+        <button type="button" lang="ar" aria-pressed="${language === 'ar'}" onclick="event.stopPropagation();openModal(${idx}, 'ar')">العربية</button>
+      </div>`;
+    }
+
     function renderProjects(filter) {
       const grid = document.getElementById('projectsGrid');
       grid.innerHTML = '';
@@ -2222,7 +2301,7 @@
           `<span class="tag${i === 0 ? ' highlight' : ''}">${t}</span>`
         ).join('');
         const features = p.features.slice(0,4).map(f => `<li>${f}</li>`).join('');
-        const platforms = p.platform.map(pl => pl === 'Android' ? androidSVG : appleSVG).join('');
+        const platforms = p.platform.map(pl => pl === 'Android' ? androidSVG : pl === 'Windows' ? windowsSVG : appleSVG).join('');
 
         const card = document.createElement('div');
         card.className = 'project-card';
@@ -2241,15 +2320,17 @@
             <span class="status-badge ${statusClass}">${p.status}</span>
           </div>
           <div class="project-body">
-            <div class="project-role">${p.role} Project</div>
+            ${p.role ? `<div class="project-role">${p.role} Project</div>` : ''}
             <h3>${p.name}</h3>
             <p class="project-desc">${p.desc}</p>
+            ${p.translations ? projectLanguageButtons(projects.indexOf(p)) : ''}
             <ul class="project-features">${features}</ul>
             <div class="project-tags">${tags}</div>
           </div>
           <div class="project-footer">
             ${p.github
               ? `<a href="${p.github}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${githubSVG} Source Code &rarr;</a>`
+              : p.caseStudy ? `<a href="${p.caseStudy}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Project Details &rarr;</a>`
               : `<span style="font-size:.75rem;color:var(--text-tertiary);display:inline-flex;align-items:center;gap:6px">${githubSVG}<span style="color:var(--text-tertiary)">Private Repo</span></span>`
             }
             <div class="platform-icons">${platforms}</div>
@@ -2261,13 +2342,25 @@
     }
 
     /* ── MODAL ── */
-    function openModal(idx) {
-      const p = projects[idx];
+    function openModal(idx, language = 'en') {
+      const original = projects[idx];
+      const p = { ...original, ...(original.translations?.[language] || {}) };
+      const labels = language === 'ar'
+        ? { about: 'عن المشروع', screenshots: 'صور المشروع', features: 'المميزات الرئيسية', tech: 'التقنيات المستخدمة', links: 'روابط المشروع', website: 'موقع المنتج', windows: 'تحميل Windows', caseStudy: 'تفاصيل المشروع', completed: 'مكتمل' }
+        : { about: 'About', screenshots: 'Screenshots', features: 'Key Features', tech: 'Tech Stack', links: 'Links', website: 'Website', windows: 'Download for Windows', caseStudy: 'Project Case Study', completed: 'Completed' };
+      document.getElementById('modalContent').dir = language === 'ar' ? 'rtl' : 'ltr';
+      document.getElementById('modalContent').lang = language;
       const statusClass = p.status === 'Completed' ? 'completed' : 'in-progress';
 
       // Screenshots — phone frames or flat images
       let screenshotsHtml = '';
-      if (p.screenshots) {
+      if (p.gallery) {
+        screenshotsHtml = `<div class="modal-section">
+          <div class="modal-section-title">${labels.screenshots}</div>
+          <div class="project-gallery">${p.gallery.map((caption, i) => `
+            <figure><a href="screenshots/clinic-organizer/${i + 1}.png" target="_blank" rel="noopener"><img src="screenshots/clinic-organizer/${i + 1}.png" alt="${caption}" loading="lazy"></a><figcaption>${caption}</figcaption></figure>
+          `).join('')}</div></div>`;
+      } else if (p.screenshots) {
         let items = '';
         if (p.noFrames && p.screenshotDir) {
           // Flat layout — plain images, no phone frame
@@ -2330,8 +2423,14 @@
         storeLinks += `
           <a href="${p.website}" target="_blank" rel="noopener" class="modal-link primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
-            Website
+            ${labels.website}
           </a>`;
+      }
+      if (p.windows) {
+        storeLinks += `<a href="${p.windows}" target="_blank" rel="noopener" class="modal-link primary">${windowsSVG} ${labels.windows}</a>`;
+      }
+      if (p.caseStudy) {
+        storeLinks += `<a href="${p.caseStudy}" target="_blank" rel="noopener" class="modal-link secondary">${labels.caseStudy} ↗</a>`;
       }
       if (p.apk) {
         storeLinks += `
@@ -2352,7 +2451,7 @@
           <a href="${p.github}" target="_blank" rel="noopener" class="modal-link secondary">
             ${githubSVG} Source Code
           </a>`;
-      } else {
+      } else if (!p.caseStudy) {
         storeLinks += `
           <span class="modal-link secondary" style="opacity:0.5;cursor:default">
             ${githubSVG} Private Repository
@@ -2378,29 +2477,30 @@
           }
           <div class="modal-hero-info">
             <h2>${p.name}</h2>
+            ${p.translations ? projectLanguageButtons(idx, language) : ''}
             <div class="modal-hero-badges">
-              <span class="status-badge ${statusClass}">${p.status}</span>
-              <span class="modal-badge role-badge">${p.role} Project</span>
+              <span class="status-badge ${statusClass}">${p.status === 'Completed' ? labels.completed : p.status}</span>
+              ${p.role ? `<span class="modal-badge role-badge">${p.role} Project</span>` : ''}
               ${p.platform.map(pl => `<span class="modal-badge role-badge">${pl}</span>`).join('')}
             </div>
           </div>
         </div>
         <div class="modal-body">
           <div class="modal-section">
-            <div class="modal-section-title">About</div>
+            <div class="modal-section-title">${labels.about}</div>
             <p class="modal-desc">${p.longDesc || p.desc}</p>
           </div>
           ${screenshotsHtml}
           <div class="modal-section">
-            <div class="modal-section-title">Key Features</div>
+            <div class="modal-section-title">${labels.features}</div>
             <div class="modal-features-grid">${featuresHtml}</div>
           </div>
-          <div class="modal-section">
-            <div class="modal-section-title">Tech Stack</div>
+          ${p.tech.length ? `<div class="modal-section">
+            <div class="modal-section-title">${labels.tech}</div>
             <div class="modal-tech-tags">${techHtml}</div>
-          </div>
+          </div>` : ''}
           <div class="modal-section">
-            <div class="modal-section-title">Links</div>
+            <div class="modal-section-title">${labels.links}</div>
             <div class="modal-links">${storeLinks}</div>
           </div>
         </div>
