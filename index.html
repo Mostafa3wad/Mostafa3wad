@@ -1395,6 +1395,11 @@
     .project-gallery figure:first-child { grid-column: 1 / -1; }
     .project-gallery img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border); }
     .project-gallery figcaption { margin-top: 8px; font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; }
+    .store-screenshots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 16px; scrollbar-width: thin; }
+    .store-screenshots a { flex: 0 0 clamp(160px, 24vw, 240px); align-self: flex-start; }
+    .store-screenshots-wide a { flex-basis: min(360px, 80vw); }
+    .store-screenshots img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border); }
+    .store-screenshots a:focus-visible { outline: 2px solid #b794f4; outline-offset: 2px; }
     #modalContent[dir="rtl"] { text-align: right; }
     @media (max-width: 600px) { .project-gallery { grid-template-columns: 1fr; } }
 
@@ -2098,6 +2103,44 @@
         "website": "https://clinicorganizer.online",
         "windows": "https://clinicorganizer.online/windows",
         "caseStudy": "https://mosoft.online/en/projects/clinic-organizer",
+        "storeGallery": [
+          {
+            "label": "Google Play · Android",
+            "labelAr": "Google Play · صور Android",
+            "wide": false,
+            "images": [
+              "screenshots/clinic-organizer/google-play-1.png",
+              "screenshots/clinic-organizer/google-play-2.png",
+              "screenshots/clinic-organizer/google-play-3.png",
+              "screenshots/clinic-organizer/google-play-4.png",
+              "screenshots/clinic-organizer/google-play-5.png"
+            ]
+          },
+          {
+            "label": "App Store · iPhone",
+            "labelAr": "App Store · صور iPhone",
+            "wide": false,
+            "images": [
+              "screenshots/clinic-organizer/app-store-iphone-1.jpg",
+              "screenshots/clinic-organizer/app-store-iphone-2.jpg",
+              "screenshots/clinic-organizer/app-store-iphone-3.jpg",
+              "screenshots/clinic-organizer/app-store-iphone-4.jpg",
+              "screenshots/clinic-organizer/app-store-iphone-5.jpg"
+            ]
+          },
+          {
+            "label": "App Store · iPad",
+            "labelAr": "App Store · صور iPad",
+            "wide": true,
+            "images": [
+              "screenshots/clinic-organizer/app-store-ipad-1.jpg",
+              "screenshots/clinic-organizer/app-store-ipad-2.jpg",
+              "screenshots/clinic-organizer/app-store-ipad-3.jpg",
+              "screenshots/clinic-organizer/app-store-ipad-4.jpg",
+              "screenshots/clinic-organizer/app-store-ipad-5.jpg"
+            ]
+          }
+        ],
         "gallery": [
           "Product website",
           "Google Play listing and Android app previews",
@@ -2401,6 +2444,18 @@
               <div class="modal-screenshots">${items}</div>
             </div>`;
         }
+      }
+
+      if (p.storeGallery) {
+        screenshotsHtml += p.storeGallery.map(group => {
+          const title = language === 'ar' ? group.labelAr : group.label;
+          return `<div class="modal-section">
+            <div class="modal-section-title">${title}</div>
+            <div class="store-screenshots${group.wide ? ' store-screenshots-wide' : ''}">${group.images.map((src, i) => `
+              <a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${title} — ${language === 'ar' ? 'صورة' : 'Screenshot'} ${i + 1}" loading="lazy"></a>
+            `).join('')}</div>
+          </div>`;
+        }).join('');
       }
 
       // Store links

@@ -167,6 +167,36 @@ SignalR WebSockets · In-app payments · Push notifications · Workmanager
   <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/3.png" width="280" alt="App Store listing and iPad app previews" />
 </p>
 
+**Google Play · Android screenshots**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/google-play-1.png" width="150" alt="Clinic Organizer Google Play · Android screenshot 1" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/google-play-2.png" width="150" alt="Clinic Organizer Google Play · Android screenshot 2" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/google-play-3.png" width="150" alt="Clinic Organizer Google Play · Android screenshot 3" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/google-play-4.png" width="150" alt="Clinic Organizer Google Play · Android screenshot 4" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/google-play-5.png" width="150" alt="Clinic Organizer Google Play · Android screenshot 5" />
+</p>
+
+**App Store · iPhone screenshots**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-iphone-1.jpg" width="150" alt="Clinic Organizer App Store · iPhone screenshot 1" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-iphone-2.jpg" width="150" alt="Clinic Organizer App Store · iPhone screenshot 2" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-iphone-3.jpg" width="150" alt="Clinic Organizer App Store · iPhone screenshot 3" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-iphone-4.jpg" width="150" alt="Clinic Organizer App Store · iPhone screenshot 4" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-iphone-5.jpg" width="150" alt="Clinic Organizer App Store · iPhone screenshot 5" />
+</p>
+
+**App Store · iPad screenshots**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-ipad-1.jpg" width="150" alt="Clinic Organizer App Store · iPad screenshot 1" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-ipad-2.jpg" width="150" alt="Clinic Organizer App Store · iPad screenshot 2" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-ipad-3.jpg" width="150" alt="Clinic Organizer App Store · iPad screenshot 3" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-ipad-4.jpg" width="150" alt="Clinic Organizer App Store · iPad screenshot 4" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/app-store-ipad-5.jpg" width="150" alt="Clinic Organizer App Store · iPad screenshot 5" />
+</p>
+
 `Clinic Management` `Appointment Scheduling` `Patient Records` `Role-Based Access` `Arabic / English`
 
 <br/>
