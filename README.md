@@ -141,6 +141,36 @@ SignalR WebSockets · In-app payments · Push notifications · Workmanager
 
 <br/>
 
+<!-- ════════════════ CLINIC ORGANIZER ════════════════ -->
+<img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/clinic-organizer-logo.png" width="84" align="left" alt="Clinic Organizer logo" />
+
+### 🏥 Clinic Organizer &nbsp;·&nbsp; <sub>`Android` · `iOS` · `Windows`</sub>
+
+> A bilingual physiotherapy clinic management system connecting appointment scheduling, patient records, treatment sessions, packages, and payments. Available on Android, iOS, and Windows, with a product website and platform download links.
+
+- **Scheduling:** Working-hour availability, duplicate-booking prevention, attendance confirmation, and postponement history.
+- **Clinical records & sessions:** Complaints, medical history, assessments, treatment plans, an interactive injury body map, a live session timer, clinical notes, and pain scores.
+- **Payments & reporting:** Session and package payments, multiple payment methods, outstanding balances, revenue reports, and therapist performance summaries.
+- **Team permissions:** Owners oversee the clinic and reports; therapists manage their patients and sessions; receptionists handle bookings and payments without editing clinical records.
+
+<a href="https://play.google.com/store/apps/details?id=com.mosoft.clinicorganizer"><img src="https://img.shields.io/badge/Google_Play-0A0E27?style=flat&logo=google-play&logoColor=00F5FF" alt="Download for Android" /></a>
+<a href="https://apps.apple.com/eg/app/clinic-organizer/id6809279509"><img src="https://img.shields.io/badge/App_Store-0A0E27?style=flat&logo=app-store&logoColor=FF00FF" alt="Download for iOS" /></a>
+<a href="https://clinicorganizer.online/windows"><img src="https://img.shields.io/badge/Windows-0A0E27?style=flat&logo=windows&logoColor=00F5FF" alt="Download for Windows" /></a>
+<a href="https://clinicorganizer.online"><img src="https://img.shields.io/badge/Website-0A0E27?style=flat&logo=googlechrome&logoColor=FF073A" alt="Product website" /></a>
+<a href="https://mosoft.online/en/projects/clinic-organizer"><img src="https://img.shields.io/badge/Case_Study-0A0E27?style=flat&logo=readthedocs&logoColor=FF00FF" alt="Project case study" /></a>
+
+<br clear="left"/>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/1.png" width="280" alt="Clinic Organizer product website" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/2.png" width="280" alt="Google Play listing and Android app previews" />
+  <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/clinic-organizer/3.png" width="280" alt="App Store listing and iPad app previews" />
+</p>
+
+`Clinic Management` `Appointment Scheduling` `Patient Records` `Role-Based Access` `Arabic / English`
+
+<br/>
+
 <!-- ════════════════ SCOUTX ════════════════ -->
 <img src="https://raw.githubusercontent.com/Mostafa3wad/Mostafa3wad/main/screenshots/scoutx/scoutx-logo.png" width="84" align="left" />
 
